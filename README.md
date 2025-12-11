@@ -84,9 +84,8 @@ You need a crypto wallet and some fake "test" money.
 1.  **Use Google Chrome**: This works best on Chrome.
 2.  **Install MetaMask Extension**: [Click here to install from Chrome Web Store](https://chromewebstore.google.com/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn).
 3.  **Enable Test Networks**:
-    *   Click the **All Popular Networks** button (on the main screen).
-    *   Go to the **Custom** tab.
-    *   Select **Sepolia**.
+    *   **First, turn on the setting**: Click the **3 bars** (top right) -> **Settings** -> **Advanced**. Scroll down and toggle **"Show test networks"** to **ON**.
+    *   **Then, select the network**: Go back to the main screen. Click the **All Popular Networks** button -> **Custom** tab -> Select **Sepolia**.
 4.  **Get Free Sepolia ETH**:
     *   **Copy Address**: Hover over the icons under your account name and copy the address for **Ethereum**.
     *   Go to [Sepolia PoW Faucet](https://sepolia-faucet.pk910.de/#/).
