@@ -26,8 +26,8 @@ A full-stack Ethereum analytics dashboard for tracking on-chain payments. It lis
 
 Clone the repository:
 ```bash
-git clone <repo-url>
-cd usdc-micropayments-dashboard
+git clone https://github.com/yash0917/ETH-Payment-Dashboard.git
+cd ETH-Payment-Dashboard
 ```
 
 ### Backend
