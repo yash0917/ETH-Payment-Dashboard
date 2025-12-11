@@ -95,7 +95,7 @@ You need a crypto wallet and some fake "test" money.
 We will use a developer tool called Remix to send the payment.
 
 1.  Open [Remix Ethereum IDE](https://remix.ethereum.org).
-2.  **Create File**: Click the tiny "Page" icon (top left) -> Name it `PaymentLogger.sol`.
+2.  **Create File**: Click **"Create new blank file"** and name it `PaymentLogger.sol`.
 3.  **Copy Code**: Copy the content of the `contracts/PaymentLogger.sol` file from this repository and paste it into Remix.
 4.  **Compile**: Press `Ctrl + S` (or Cmd + S) to save and compile.
 5.  **Connect Wallet**:
