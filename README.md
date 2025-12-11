@@ -147,9 +147,17 @@ If you fork this repo, here are the settings used:
 -   **Build Command**: `npm install && npm run build`
 -   **Start Command**: `npm start`
 -   **Environment Variables**:
-    -   `RPC_URL`: `https://ethereum-sepolia-rpc.publicnode.com` (or similar)
-    -   `CONTRACT_ADDRESS`: `0x2A7cB6097E510104d629cEb37f44595D880Fc192`
-    -   `PORT`: `4000` (or leave empty if provided by host)
+    -   `PORT`: `8080` (or leave default)
+    -   `RPC_URL`: Your Sepolia RPC URL
+    -   `CONTRACT_ADDRESS`: The deployed PaymentLogger address
+
+#### 💾 Data Persistence (Preventing Data Loss)
+By default, Railway resets the "disk" every time you deploy. To keep your transaction history:
+1.  Go to your Railway Project -> Click the **Backend Service**.
+2.  Click the **Volumes** tab -> **Add Volume**.
+3.  **Mount Path**: `/app/backend`
+    *   *Why?* The database file is located at `/app/backend/db.sqlite`.
+4.  Adding this volume will restart the service. Now your data will survive redeploys!
 
 ### Frontend (Netlify / Vercel)
 -   **Build Command**: `npm run build`
