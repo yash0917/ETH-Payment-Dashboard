@@ -13,7 +13,7 @@ A full-stack Ethereum analytics dashboard for tracking on-chain payments. It lis
 ## Deployed Contract
 -   **Network**: Sepolia
 -   **Contract**: `PaymentLogger`
--   **Address**: `0x1EB79c9E744EF73E9F2AdDE383A0cf0f4db7307c`
+-   **Address**: `0x2A7cB6097E510104d629cEb37f44595D880Fc192`
 -   **RPC URL**: `https://ethereum-sepolia-rpc.publicnode.com` (or your own provider)
 
 ## Prerequisites
@@ -94,7 +94,7 @@ This project is ready for deployment on free tier services.
 -   **Start Command**: `npm start`
 -   **Environment Variables**:
     -   `RPC_URL`: `https://ethereum-sepolia-rpc.publicnode.com` (or similar)
-    -   `CONTRACT_ADDRESS`: `0x1EB79c9E744EF73E9F2AdDE383A0cf0f4db7307c`
+    -   `CONTRACT_ADDRESS`: `0x2A7cB6097E510104d629cEb37f44595D880Fc192`
     -   `PORT`: `4000` (or leave empty if provided by host)
 
 ### Frontend (Netlify / Vercel)
@@ -102,4 +102,4 @@ This project is ready for deployment on free tier services.
 -   **Publish Directory**: `dist`
 -   **Environment Variables**:
     -   `VITE_API_BASE_URL`: The URL of your deployed backend (e.g., `https://my-backend.onrender.com`).
-    -   `VITE_CONTRACT_ADDRESS`: `0x1EB79c9E744EF73E9F2AdDE383A0cf0f4db7307c`
+    -   `VITE_CONTRACT_ADDRESS`: `0x2A7cB6097E510104d629cEb37f44595D880Fc192`
