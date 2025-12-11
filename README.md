@@ -101,7 +101,3 @@ This project is ready for deployment on free tier services.
 -   **Environment Variables**:
     -   `VITE_API_BASE_URL`: The URL of your deployed backend (e.g., `https://my-backend.onrender.com`).
     -   `VITE_CONTRACT_ADDRESS`: `0x1EB79c9E744EF73E9F2AdDE383A0cf0f4db7307c`
-
----
-
-**Note on Circle Integration**: This project layout includes placeholders for Circle API credentials in `.env.example`, but the current implementation relies natively on Ethereum events and does not actively use the Circle Developer Platform API. Future iterations may integrate Circle for programmable wallets or stablecoin transfers.
