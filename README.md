@@ -1,6 +1,8 @@
-# USDC Micro-Payments Dashboard
+# ETH Payment Dashboard (Sepolia Testnet)
 
-A full-stack Ethereum analytics dashboard for micro-payments. It listens to a `PaymentLogger` smart contract on the Sepolia testnet and visualizes global and per-wallet payment activity, offering both real-time transaction lists and historical analytics charts.
+A full-stack Ethereum analytics dashboard for tracking on-chain payments. It listens to a `PaymentLogger` smart contract on the Sepolia testnet and visualizes global and per-wallet activity, offering both real-time transaction lists and historical analytics charts.
+
+**Note:** This is a testnet application. No real funds are involved.
 
 ## Tech Stack
 -   **Smart Contract**: Solidity (deployed on Sepolia)
