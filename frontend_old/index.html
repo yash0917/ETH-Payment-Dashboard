@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>USDC Micro-Payments Dashboard (Testnet)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>USDC Micro-Payments Dashboard</h1>
+      <p>Testnet analytics for PaymentLogger contract events.</p>
+    </header>
+
+    <section class="stats" id="stats-section">
+      <div class="stat-card">
+        <div class="stat-label">Total Transactions</div>
+        <div class="stat-value" id="stat-txCount">–</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Total Amount (raw units)</div>
+        <div class="stat-value" id="stat-totalAmount">–</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Unique Senders</div>
+        <div class="stat-value" id="stat-uniqueSenders">–</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Unique Receivers</div>
+        <div class="stat-value" id="stat-uniqueReceivers">–</div>
+      </div>
+    </section>
+
+    <section class="table-section">
+      <div class="table-header">
+        <h2>Recent Transactions</h2>
+        <button id="refresh-btn">Refresh</button>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Tx Hash</th>
+            <th>Block</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Amount</th>
+            <th>Timestamp</th>
+          </tr>
+        </thead>
+        <tbody id="tx-table-body">
+          <tr><td colspan="6" style="text-align:center;">Loading...</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
