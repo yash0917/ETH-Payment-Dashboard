@@ -84,11 +84,12 @@ You need a crypto wallet and some fake "test" money.
 1.  **Use Google Chrome**: This works best on Chrome.
 2.  **Install MetaMask Extension**: [Click here to install from Chrome Web Store](https://chromewebstore.google.com/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn).
 3.  **Enable Test Networks**:
-    *   Open MetaMask -> Click the **Network Selector** (top left, usually says "Ethereum Mainnet").
-    *   Toggle **"Show test networks"** to ON.
-    *   Select **Sepolia** from the list.
+    *   Click the **3 bars** (top right) -> **Settings**.
+    *   Go to **Advanced**.
+    *   Scroll down and toggle **"Show test networks"** to **ON**.
+    *   Go back to the main screen. Click the network dropdown (top left) and select **Sepolia**.
 4.  **Get Free Sepolia ETH**:
-    *   Copy your address (Click the copy icon next to your account name in MetaMask).
+    *   **Copy Address**: Click the copy icon ❐ next to your account name (e.g., "Account 1") in MetaMask.
     *   Go to [Sepolia PoW Faucet](https://sepolia-faucet.pk910.de/#/).
     *   Paste your address and click "Start Mining". Wait ~5 mins to get enough ETH for gas.
 
