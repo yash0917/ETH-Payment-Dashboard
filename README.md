@@ -105,7 +105,7 @@ We will use a developer tool called Remix to send the payment.
 
 ### Step 3: Send a Test Payment
 1.  **Load Contract**:
-    *   In the "At Address" box (under "Deploy"), paste this address:
+    *   In the "At Address" box (under "Deploy and Verify"), paste this address:
         `0x2A7cB6097E510104d629cEb37f44595D880Fc192`
     *   Click the **"At Address"** button.
 2.  **Send Transaction**:
