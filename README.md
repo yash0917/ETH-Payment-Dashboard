@@ -1,6 +1,6 @@
 # ETH Payment Dashboard (Sepolia Testnet)
 
-**[🚀 Live Demo](https://eth-payment-dashboard.vercel.app)** | **[📄 Smart Contract](https://sepolia.etherscan.io/address/0x2A7cB6097E510104d629cEb37f44595D880Fc192)**
+**[🚀 Live Demo](https://eth-payment-dashboard-45cksgees-yash-aggarwals-projects.vercel.app/)** | **[📄 Smart Contract](https://sepolia.etherscan.io/address/0x2A7cB6097E510104d629cEb37f44595D880Fc192)**
 
 A full-stack Ethereum analytics dashboard for tracking on-chain payments. It listens to a `PaymentLogger` smart contract on the Sepolia testnet and visualizes global and per-wallet activity, offering both real-time transaction lists and historical analytics charts.
 
@@ -137,15 +137,14 @@ Go to the [Live Dashboard](https://eth-payment-dashboard.vercel.app). Within 15 
 4.  **Wallet Integration**: Users can connect their MetaMask wallet to view their personal transaction history and activity charts alongside global metrics.
 
 ## Deployment Status
-This project is currently deployed and live!
+This project is currently deployed and live! I used **Vercel** for the frontend and **Railway** for the backend.
 
--   **Frontend**: [Vercel Deployment](https://eth-payment-dashboard.vercel.app)
--   **Backend**: [Railway Deployment](https://eth-payment-dashboard-production.up.railway.app)
+-> **[View Live Dashboard](https://eth-payment-dashboard-45cksgees-yash-aggarwals-projects.vercel.app/)** <-
 
 ### Deployment Config (Reference)
 If you fork this repo, here are the settings used:
 
-#### Backend (Railway / Render)
+#### Backend (Railway)
 -   **Build Command**: `npm install && npm run build`
 -   **Start Command**: `npm start`
 -   **Environment Variables**:
