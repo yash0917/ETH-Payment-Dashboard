@@ -72,6 +72,51 @@ cd ETH-Payment-Dashboard
 
 5.  Open [http://localhost:5173](http://localhost:5173) in your browser.
 
+## 🎮 Interactive Demo: Try it Yourself!
+
+Want to see the dashboard light up? You can send a test transaction on the Sepolia testnet and watch it appear in real-time.
+
+### Step 1: Get Ready (MetaMask & Testnet ETH)
+1.  **Install MetaMask**: Download the [MetaMask browser extension](https://metamask.io/).
+2.  **Create Account**: Follow the prompts to set up a new wallet.
+3.  **Get Sepolia ETH (Free)**: You need "gas" to send transactions.
+    *   Go to [Sepolia PoW Faucet](https://sepolia-faucet.pk910.de/#/).
+    *   Paste your MetaMask address.
+    *   Start Mining (it takes a few minutes to get enough ETH).
+
+### Step 2: Connect via Remix IDE
+Since this dashboard is for analytics, we use **Remix** to simulate the payment sending.
+
+1.  Open [Remix Ethereum IDE](https://remix.ethereum.org).
+2.  Create a new file (e.g., `JoyRide.sol`) and paste this code:
+    ```solidity
+    // SPDX-License-Identifier: MIT
+    pragma solidity ^0.8.0;
+    contract PaymentLogger {
+        function logPayment(address to, uint256 amount) external {}
+    }
+    ```
+3.  **Compile**: Press `Ctrl + S` (or Cmd + S).
+4.  **Connect Wallet**:
+    *   Click the **"Deploy & Run Transactions"** icon (left sidebar, logo with ETH symbol).
+    *   Change **"Environment"** to **"Injected Provider - MetaMask"**.
+    *   Approve the connection in your MetaMask pop-up.
+
+### Step 3: Send a Test Payment
+1.  In the **"At Address"** box, paste the contract address:
+    `0x2A7cB6097E510104d629cEb37f44595D880Fc192`
+2.  Click **"At Address"** (button next to the box).
+3.  Expand the loaded contract.
+4.  You will see `logPayment`. Fill it in:
+    *   **to**: `0xd1818022104F1193454b622be8c2D8B02b69cD45` (My Test Wallet)
+    *   **amount**: `100` (Any number you want)
+5.  Click **"transact"**.
+6.  Confirm in MetaMask.
+
+**🎉 Now look at the dashboard! Your transaction will appear in the "Global Stats" and "Recent Transactions" within seconds.**
+
+---
+
 ## Demo Flow
 1.  **Start Services**: Ensure both backend (`npm run dev`) and frontend (`npm run dev`) are running.
 2.  **Open Dashboard**: Navigate to [http://localhost:5173](http://localhost:5173). Notice the testnet banner and global stats.
