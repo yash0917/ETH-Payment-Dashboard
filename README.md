@@ -155,8 +155,8 @@ If you fork this repo, here are the settings used:
 By default, Railway resets the "disk" every time you deploy. To keep your transaction history:
 1.  Go to your Railway Project -> Click the **Backend Service**.
 2.  Click the **Volumes** tab -> **Add Volume**.
-3.  **Mount Path**: `/app/backend`
-    *   *Why?* The database file is located at `/app/backend/db.sqlite`.
+3.  **Mount Path**: `/app/backend/data`
+    *   *Why?* The code now saves the database to this specific folder, so we can persist it without hiding the application code.
 4.  Adding this volume will restart the service. Now your data will survive redeploys!
 
 ### Frontend (Netlify / Vercel)

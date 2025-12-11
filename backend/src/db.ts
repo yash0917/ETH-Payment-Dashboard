@@ -1,9 +1,16 @@
 import sqlite3 from "sqlite3";
 import path from "path";
+import fs from "fs";
 
 sqlite3.verbose();
 
-const DB_PATH = path.join(__dirname, "..", "db.sqlite");
+// Ensure data directory exists for persistent volume mounting
+const DATA_DIR = path.join(__dirname, "..", "data");
+if (!fs.existsSync(DATA_DIR)) {
+  fs.mkdirSync(DATA_DIR);
+}
+
+const DB_PATH = path.join(DATA_DIR, "db.sqlite");
 
 export const db = new sqlite3.Database(DB_PATH, (err) => {
   if (err) {
