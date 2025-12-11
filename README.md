@@ -1,5 +1,7 @@
 # ETH Payment Dashboard (Sepolia Testnet)
 
+**[🚀 Live Demo](https://eth-payment-dashboard.vercel.app)** | **[📄 Smart Contract](https://sepolia.etherscan.io/address/0x2A7cB6097E510104d629cEb37f44595D880Fc192)**
+
 A full-stack Ethereum analytics dashboard for tracking on-chain payments. It listens to a `PaymentLogger` smart contract on the Sepolia testnet and visualizes global and per-wallet activity, offering both real-time transaction lists and historical analytics charts.
 
 **Note:** This is a testnet application. No real funds are involved.
@@ -74,21 +76,28 @@ cd ETH-Payment-Dashboard
 
 ## 🎮 Interactive Demo: Try it Yourself!
 
-Want to see the dashboard light up? You can send a test transaction on the Sepolia testnet and watch it appear in real-time.
+This dashboard is **LIVE**! You can send a test transaction on the Sepolia testnet right now and watch it appear on the dashboard in real-time.
 
-### Step 1: Get Ready (MetaMask & Testnet ETH)
-1.  **Install MetaMask**: Download the [MetaMask browser extension](https://metamask.io/).
-2.  **Create Account**: Follow the prompts to set up a new wallet.
-3.  **Get Sepolia ETH (Free)**: You need "gas" to send transactions.
+### Step 1: Get Ready
+You need a crypto wallet and some fake "test" money.
+
+1.  **Use Google Chrome**: This works best on Chrome.
+2.  **Install MetaMask Extension**: [Click here to install from Chrome Web Store](https://chromewebstore.google.com/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn).
+3.  **Enable Test Networks**:
+    *   Open MetaMask -> Click the **Network Selector** (top left, usually says "Ethereum Mainnet").
+    *   Toggle **"Show test networks"** to ON.
+    *   Select **Sepolia** from the list.
+4.  **Get Free Sepolia ETH**:
+    *   Copy your address (Click the copy icon next to your account name in MetaMask).
     *   Go to [Sepolia PoW Faucet](https://sepolia-faucet.pk910.de/#/).
-    *   Paste your MetaMask address.
-    *   Start Mining (it takes a few minutes to get enough ETH).
+    *   Paste your address and click "Start Mining". Wait ~5 mins to get enough ETH for gas.
 
-### Step 2: Connect via Remix IDE
-Since this dashboard is for analytics, we use **Remix** to simulate the payment sending.
+### Step 2: Connect to the Contract
+We will use a developer tool called Remix to send the payment.
 
 1.  Open [Remix Ethereum IDE](https://remix.ethereum.org).
-2.  Create a new file (e.g., `JoyRide.sol`) and paste this code:
+2.  **Create File**: Click the tiny "Page" icon (top left) -> Name it `JoyRide.sol`.
+3.  **Paste Code**:
     ```solidity
     // SPDX-License-Identifier: MIT
     pragma solidity ^0.8.0;
@@ -96,24 +105,27 @@ Since this dashboard is for analytics, we use **Remix** to simulate the payment 
         function logPayment(address to, uint256 amount) external {}
     }
     ```
-3.  **Compile**: Press `Ctrl + S` (or Cmd + S).
-4.  **Connect Wallet**:
-    *   Click the **"Deploy & Run Transactions"** icon (left sidebar, logo with ETH symbol).
-    *   Change **"Environment"** to **"Injected Provider - MetaMask"**.
-    *   Approve the connection in your MetaMask pop-up.
+4.  **Compile**: Press `Ctrl + S` (or Cmd + S) to save and compile.
+5.  **Connect Wallet**:
+    *   Click the **"Deploy & Run Transactions"** icon (left sidebar, looks like the Ethereum logo).
+    *   **Environment**: Change this drop-down to **"Injected Provider - MetaMask"**.
+    *   MetaMask will pop up -> Click **Confirm/Connect**.
 
 ### Step 3: Send a Test Payment
-1.  In the **"At Address"** box, paste the contract address:
-    `0x2A7cB6097E510104d629cEb37f44595D880Fc192`
-2.  Click **"At Address"** (button next to the box).
-3.  Expand the loaded contract.
-4.  You will see `logPayment`. Fill it in:
-    *   **to**: `0xd1818022104F1193454b622be8c2D8B02b69cD45` (My Test Wallet)
-    *   **amount**: `100` (Any number you want)
-5.  Click **"transact"**.
-6.  Confirm in MetaMask.
+1.  **Load Contract**:
+    *   In the "At Address" box (under "Deploy"), paste this address:
+        `0x2A7cB6097E510104d629cEb37f44595D880Fc192`
+    *   Click the **"At Address"** button.
+2.  **Send Transaction**:
+    *   Expand the contract that appeared.
+    *   You will see a `logPayment` orange button. Expand it (click the caret).
+    *   **to**: `0xd1818022104F1193454b622be8c2D8B02b69cD45` (This is my test wallet - send it here!)
+    *   **amount**: `100` (Any number)
+    *   Click **"transact"**.
+3.  **Confirm**: MetaMask will pop up again. Click **"Confirm"**.
 
-**🎉 Now look at the dashboard! Your transaction will appear in the "Global Stats" and "Recent Transactions" within seconds.**
+**🎉 Watch the Dashboard!**
+Go to the [Live Dashboard](https://eth-payment-dashboard.vercel.app). Within 15 seconds, your transaction will appear in "Recent Transactions" and the "Global Volume" chart will jump up!
 
 ---
 
@@ -131,10 +143,16 @@ Since this dashboard is for analytics, we use **Remix** to simulate the payment 
 3.  **Visualization**: The frontend fetches aggregated stats and recent transactions from the backend API.
 4.  **Wallet Integration**: Users can connect their MetaMask wallet to view their personal transaction history and activity charts alongside global metrics.
 
-## Deployment Notes
-This project is ready for deployment on free tier services.
+## Deployment Status
+This project is currently deployed and live!
 
-### Backend (Render / Railway / Fly.io)
+-   **Frontend**: [Vercel Deployment](https://eth-payment-dashboard.vercel.app)
+-   **Backend**: [Railway Deployment](https://eth-payment-dashboard-production.up.railway.app)
+
+### Deployment Config (Reference)
+If you fork this repo, here are the settings used:
+
+#### Backend (Railway / Render)
 -   **Build Command**: `npm install && npm run build`
 -   **Start Command**: `npm start`
 -   **Environment Variables**:
