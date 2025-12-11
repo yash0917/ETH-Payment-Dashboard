@@ -89,7 +89,7 @@ You need a crypto wallet and some fake "test" money.
 4.  **Get Free Sepolia ETH**:
     *   **Copy Address**: Hover over the icons under your account name and copy the address for **Ethereum**.
     *   Go to [Sepolia PoW Faucet](https://sepolia-faucet.pk910.de/#/).
-    *   Paste your address and click "Start Mining". **Wait ~2 mins** until you have roughly **0.05 ETH** (that is plenty), then Stop Mining and Claim Rewards.
+    *   Paste your address and click "Start Mining". **Wait ~2 mins** until you have **0.05 ETH minimum**, then you can Stop Mining and Claim Rewards.
 
 ### Step 2: Connect to the Contract
 We will use a developer tool called Remix to send the payment.
