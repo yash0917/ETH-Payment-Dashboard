@@ -90,21 +90,14 @@ You need a crypto wallet and some fake "test" money.
 4.  **Get Free Sepolia ETH**:
     *   **Copy Address**: Hover over the icons under your account name and copy the address for **Ethereum**.
     *   Go to [Sepolia PoW Faucet](https://sepolia-faucet.pk910.de/#/).
-    *   Paste your address and click "Start Mining". Wait ~5 mins to get enough ETH for gas.
+    *   Paste your address and click "Start Mining". **Wait ~2 mins** until you have roughly **0.05 ETH** (that is plenty), then Stop Mining and Claim Rewards.
 
 ### Step 2: Connect to the Contract
 We will use a developer tool called Remix to send the payment.
 
 1.  Open [Remix Ethereum IDE](https://remix.ethereum.org).
-2.  **Create File**: Click the tiny "Page" icon (top left) -> Name it `JoyRide.sol`.
-3.  **Paste Code**:
-    ```solidity
-    // SPDX-License-Identifier: MIT
-    pragma solidity ^0.8.0;
-    contract PaymentLogger {
-        function logPayment(address to, uint256 amount) external {}
-    }
-    ```
+2.  **Create File**: Click the tiny "Page" icon (top left) -> Name it `PaymentLogger.sol`.
+3.  **Copy Code**: Copy the content of the `contracts/PaymentLogger.sol` file from this repository and paste it into Remix.
 4.  **Compile**: Press `Ctrl + S` (or Cmd + S) to save and compile.
 5.  **Connect Wallet**:
     *   Click the **"Deploy & Run Transactions"** icon (left sidebar, looks like the Ethereum logo).
@@ -117,7 +110,7 @@ We will use a developer tool called Remix to send the payment.
         `0x2A7cB6097E510104d629cEb37f44595D880Fc192`
     *   Click the **"At Address"** button.
 2.  **Send Transaction**:
-    *   Expand the contract that appeared.
+    *   **Expand the Loaded Contract**: Look at the "Deployed Contracts" section (bottom left) and click the arrow `>` to expand the contract you just loaded.
     *   You will see a `logPayment` orange button. Expand it (click the caret).
     *   **to**: `0xd1818022104F1193454b622be8c2D8B02b69cD45` (This is my test wallet - send it here!)
     *   **amount**: `100` (Any number)
