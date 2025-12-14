@@ -1,6 +1,6 @@
 # ETH Payment Dashboard (Sepolia Testnet)
 
-**[🚀 Live Demo](https://eth-payment-dashboard-45cksgees-yash-aggarwals-projects.vercel.app/)** | **[📄 Smart Contract](https://sepolia.etherscan.io/address/0x2A7cB6097E510104d629cEb37f44595D880Fc192)**
+**[🚀 Live Demo](https://eth-payment-dashboard.vercel.app/)** | **[📄 Smart Contract](https://sepolia.etherscan.io/address/0x2A7cB6097E510104d629cEb37f44595D880Fc192)**
 
 A full-stack Ethereum analytics dashboard for tracking on-chain payments. It listens to a `PaymentLogger` smart contract on the Sepolia testnet and visualizes global and per-wallet activity, offering both real-time transaction lists and historical analytics charts.
 
