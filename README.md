@@ -138,7 +138,7 @@ Go to the [Live Dashboard](https://eth-payment-dashboard.vercel.app). Within 15 
 ## Deployment Status
 This project is currently deployed and live! I used **Vercel** for the frontend and **Railway** for the backend.
 
--> **[View Live Dashboard](https://eth-payment-dashboard-45cksgees-yash-aggarwals-projects.vercel.app/)** <-
+-> **[View Live Dashboard](https://eth-payment-dashboard.vercel.app/)** <-
 
 ### Deployment Config (Reference)
 If you fork this repo, here are the settings used:
